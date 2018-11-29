@@ -122,7 +122,7 @@ def flywayServer = System.properties['flywayServer'] ?: '172.17.0.2'
 println "flywayServer[$flywayServer]"
 
 flyway {
-	url = "jdbc:sqlserver://$flywayServer:1434;databaseName=demo"
+	url = "jdbc:sqlserver://$flywayServer:1433;databaseName=demo"
 	user = 'sa'
 	password = 'Pa$$w0rd1'
 	baselineOnMigrate = true
